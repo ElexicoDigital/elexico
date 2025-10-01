@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Theme variables */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* Prefer the locally installed Windows Ebrima font */
+@font-face {
+  font-family: "EbrimaLocal";
+  src: local("Ebrima");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+/* Base page styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "EbrimaLocal", Ebrima, "Segoe UI", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Optional: make the page feel snappier when scrolling */
+html, body {
+  height: 100%;
+}
